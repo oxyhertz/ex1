@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(49, 53, 61);
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main {
+    background-color: rgb(238, 239, 247);
+}
+
+img {
+    width: 100%;
+}
+
+.cart-icon {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    padding-right: 20px;
+}
+
+.cart-icon:hover {
+    background-color: rgb(38, 41, 47);
+}
+
+.cart-item {
+    height: 25px;
+    width: 150px;
+    background-color: rgb(164, 165, 176);
+}
+
+.item {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    background-color: rgb(211, 212, 225);
+    margin-bottom: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    /* max-width: 350px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+    padding-top: 130px;
+}
+
+.shopping-cart {
+    min-height: calc(100vh - 100px);
+    position: fixed;
+    width: 250px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    right: -250px;
+    /* transform: translateX(-100%); */
+    padding-top: 30px;
+    transition: 0.8s;
+    /* transform: translateX(-250px); */
+}
+
+.cart-item-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 15px;
+}
+
+.delete {
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+
+.cart-item-container:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.open {
+    /* transform: translateX(0); */
+    right: 0;
+    /* animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+}
+
+
+/* @keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-250px);
+    }
+} */
+
+
+/* @media screen and (min-width: 600px) {
+    .container {
+        max-width: 700px;
+        flex-direction: row;
+    }
+    .item:not(:nth-child(2n)) {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .container {
+        max-width: 980px;
+    }
+    .item:not(:nth-child(2n)) {
+        margin-right: 0;
+    }
+    .item:not(:nth-child(3n)) {
+        margin-right: 50px
+    }
+} */
